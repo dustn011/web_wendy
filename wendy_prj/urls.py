@@ -19,4 +19,6 @@ from django.urls import path, include
 urlpatterns = [
     path('wendy_store/', include('wendy_store.urls')),
     path('admin/', admin.site.urls),
+    path('accounts/', include('allauth.urls')),
+    path('', include('landing_pages.urls')),
 ]

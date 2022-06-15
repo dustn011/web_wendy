@@ -19,6 +19,9 @@ class Post(models.Model):
     def __str__(self):
         return f'[{self.pk}] {self.title} :: {self.author}'
 
+    def get_absolute_url(self):
+        return f'/wendy_store/{self.pk}/'
+
 
 class Comment(models.Model):
     # 어떤 포스트에 대한 댓글 저장 post 필드
@@ -33,4 +36,9 @@ class Comment(models.Model):
     modified_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return f'[{self.author}]::{self.title}'
+        return f'[{self.author}]::{self.content}'
+
+    def get_absolute_url(self):
+        return f'{self.post.get_absolute_url()}#comment-{self.pk}'
+
+

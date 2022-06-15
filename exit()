@@ -1,0 +1,47 @@
+[33mcommit f51b2956313c44f646718763f085e5eac793fa8e[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: dustn011 <chi8850@naver.com>
+Date:   Wed Jun 15 19:24:59 2022 +0900
+
+    new version
+
+[33mcommit 7fdc78f379e2f8bcf62a82bf4d43046eb38e23b6[m[33m ([m[1;32mswitch[m[33m)[m
+Author: dustn011 <chi8850@naver.com>
+Date:   Sat Jun 11 13:45:08 2022 +0900
+
+    작성자 생성
+
+[33mcommit e920e2e5ea8a56e4a779bb45e464c861a7b4e316[m
+Author: dustn011 <chi8850@naver.com>
+Date:   Sat Jun 11 13:40:16 2022 +0900
+
+    author 필드 추가
+
+[33mcommit d336355e77e2a478254e8592103c5282c89b3160[m
+Author: dustn011 <chi8850@naver.com>
+Date:   Sat Jun 11 13:04:10 2022 +0900
+
+    '통합수정'
+
+[33mcommit 5bbd9751c94188242dae2df7796b0c9425054224[m[33m ([m[1;31morigin/detail[m[33m, [m[1;32mdetail[m[33m)[m
+Author: dustn011 <chi8850@naver.com>
+Date:   Sat Jun 11 10:33:31 2022 +0900
+
+    Post 모델 생성
+
+[33mcommit 411158ac45a8bf64ef78dc5dea33810c6a49d10b[m
+Author: dustn011 <102280054+dustn011@users.noreply.github.com>
+Date:   Sat Jun 11 01:39:13 2022 +0900
+
+    add wendy_store
+
+[33mcommit a27291f8a3b24dcb8f6307152104d12bcca5fe54[m
+Author: dustn011 <chi8850@naver.com>
+Date:   Fri Jun 10 15:11:00 2022 +0900
+
+    Wendy 프로젝트 생성
+
+[33mcommit 3765a2e826e796dce4f9ba541e7916352a379e44[m
+Author: dustn011 <102280054+dustn011@users.noreply.github.com>
+Date:   Fri Jun 10 14:56:21 2022 +0900
+
+    Initial commit
