@@ -8,6 +8,7 @@ class Post(models.Model):
     # 내용(content)
     content = models.TextField()
 
+    head_image = models.ImageField(upload_to='wendy_store/images/%Y/%m/%d/', blank=True)
     # 작성일(created_at)
     created_at = models.DateTimeField(auto_now_add=True)
     # 수정일(updated_at)
@@ -18,6 +19,9 @@ class Post(models.Model):
 
     def __str__(self):
         return f'[{self.pk}] {self.title} :: {self.author}'
+
+    def get_absolute_url(self):
+        return f'/wendy_store/{self.pk}/'
 
 
 class Comment(models.Model):
@@ -33,4 +37,7 @@ class Comment(models.Model):
     modified_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return f'[{self.author}]::{self.title}'
+        return f'[{self.author}]::{self.content}'
+
+    def get_absolute_url(self):
+        return f'{self.post.get_absolute_url()}#comment-{self.pk}'

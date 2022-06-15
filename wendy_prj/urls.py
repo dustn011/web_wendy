@@ -16,7 +16,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+from django.conf import settings
+from django.conf.urls.static import static
+
 urlpatterns = [
+    # 코디상세보기 페이지 url
     path('wendy_store/', include('wendy_store.urls')),
+    # 관리자 페이지 url
     path('admin/', admin.site.urls),
+    path('accounts/', include('allauth.urls')),
+
 ]
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
